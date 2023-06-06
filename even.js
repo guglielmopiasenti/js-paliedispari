@@ -16,3 +16,18 @@ function isEven(number) {
 function determineWinner(userChoice, userNumber, computerNumber) {
   const sum = userNumber + computerNumber;
   const isSumEven = isEven(sum);
+
+  console.log(`User's Choice: ${userChoice}`);
+  console.log(`User's Number: ${userNumber}`);
+  console.log(`Computer's Number: ${computerNumber}`);
+  console.log(`Sum of the Numbers: ${sum}`);
+
+  //   if cycle to determine winner
+  if ((userChoice === 'even' && isSumEven) || (userChoice === 'odd' && !isSumEven)) {
+    console.log('Congratulations! You won!');
+  } else {
+    console.log('Computer wins! Better luck next time!');
+  }
+}
+
+// if cycle to determine if invalid number were prompted
