@@ -31,3 +31,9 @@ function determineWinner(userChoice, userNumber, computerNumber) {
 }
 
 // if cycle to determine if invalid number were prompted
+if (userNumber >= 1 && userNumber <= 5) {
+  const computerNumber = generateRandomNumber();
+  determineWinner(userChoice, userNumber, computerNumber);
+} else {
+  console.log('Invalid number. Please enter a number from 1 to 5.');
+}
