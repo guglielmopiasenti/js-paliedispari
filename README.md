@@ -21,3 +21,12 @@ We determine if the sum of the two numbers is even or odd (using a function)
 We declare who won.
 
 # procedure second exercise
+
+1. asking the user to choose odd and number
+2. Generate a random number between 1 and 5
+3. Check if the number is even
+4. determine how's the winne rwith a function:
+   1. create function with a sum between the numbers chosen
+   2. print the result
+   3. if cycle to determine winner
+   4. if cycle for invalid numbers
