@@ -6,3 +6,13 @@ function generateRandomNumber() {
   // Generate a random number between 1 and 5
   return Math.floor(Math.random() * 5) + 1;
 }
+
+function isEven(number) {
+  // Check if the number is even
+  return number % 2 === 0;
+}
+
+// function to determine winner
+function determineWinner(userChoice, userNumber, computerNumber) {
+  const sum = userNumber + computerNumber;
+  const isSumEven = isEven(sum);
